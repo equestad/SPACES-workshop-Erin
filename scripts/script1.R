@@ -9,3 +9,8 @@ ggplot(complete_old, aes(x=hindfoot_length, y = weight))+
 #adding color for year
 ggplot(complete_old, aes(x=hindfoot_length, y = weight, color=year))+
   geom_point()
+
+#adding classic theme
+ggplot(complete_old, aes(x=hindfoot_length, y = weight, color=year))+
+  geom_point()+
+  theme_classic()
